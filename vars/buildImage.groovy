@@ -7,5 +7,6 @@ def call () {
         sh 'docker build -t arman04/java-maven-app:jma-2.1 .'
         sh "echo $PASSWORD | docker login -u $USERNAME --password-stdin"
         sh 'docker push arman04/java-maven-app:jma-2.1'
+        sh 'done'
     }
 }
